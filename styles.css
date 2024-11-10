@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("bg3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color:rgba(253,209,244,0.91);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(168,108,166,0.84);
+}
+
+/* Header */
+.header {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Content Layout */
+.content {
+    padding: 2rem;
+}
+
+.techniques, .equipment {
+    margin-bottom: 3rem;
+}
+
+.technique, .item {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.technique-info, .item-info {
+    max-width: 500px;
+}
+
+.technique img, .item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.technique-info h3, .item-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.technique-info p, .item-info p {
+    font-size: 1rem;
+    color:white;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .technique, .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .technique img, .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .technique-info, .item-info {
+        max-width: none;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .technique-info h3, .item-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .technique-info p, .item-info p {
+        font-size: 0.9rem;
+    }
+}
+
+
